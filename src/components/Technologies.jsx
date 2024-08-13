@@ -1,5 +1,5 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiTailwindcss, SiMongodb, SiRedux, SiTypescript, SiExpress } from "react-icons/si";
+import { SiTailwindcss, SiMongodb, SiRedux, SiTypescript, SiExpress, SiFirebase } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
 import { DiHtml5, DiCss3, DiJavascript1, DiJava, DiMysql, DiPhp } from "react-icons/di";
@@ -10,14 +10,14 @@ const IconCard = ({ icon: Icon, label, color, delay }) => (
     variants={iconVariants(delay)}
     initial="initial"
     animate="animate"
-    className="card relative h-32 w-32 lg:h-40 lg:w-40 cursor-pointer hover:scale-105 transition-transform"
+    className="card relative h-32 w-32 lg:h-36 lg:w-36 cursor-pointer hover:scale-105 transition-transform"
   >
     <div
       className="group relative flex flex-col h-full w-full select-none items-center justify-evenly rounded-2xl border-2 border-gray-900 bg-gradient-to-tr from-gray-950 to-gray-900 text-sm font-light text-gray-300"
       aria-label={label}
     >
-      <Icon className={`text-5xl lg:text-6xl ${color}`} />
-      <p className="text-sm lg:text-md text-slate-50">{label}</p>
+      <Icon className={`text-5xl ${color}`} />
+      <p className="text-sm text-slate-50">{label}</p>
     </div>
   </motion.div>
 );
@@ -40,7 +40,7 @@ const iconVariants = (delay) => ({
 const Technologies = () => {
   return (
     <div id="technologies" className="border-b border-neutral-800 pb-4 lg:pb-24">
-      <h2 className="lg:mt-16 mb-16 lg:mb-16 text-center text-4xl">Technologies</h2>
+      <h2 className="lg:mt-16 mb-16 lg:mb-16 text-center text-4xl font-bold">Technologies</h2>
       <motion.div
         whileInView={{ x: 0, opacity: 1 }}
         animate={{ opacity: 0, x: -50 }}
@@ -61,6 +61,7 @@ const Technologies = () => {
         <IconCard icon={FaNodeJs} label="Node.js" color="text-green-500" delay={12} />
         <IconCard icon={SiExpress} label="Express.js" color="text-slate-500" delay={13} />
         <IconCard icon={SiMongodb} label="MongoDB" color="text-green-500" delay={14} />
+        <IconCard icon={SiFirebase} label="Firebase" color="text-yellow-400" delay={14} />
       </motion.div>
     </div>
   );

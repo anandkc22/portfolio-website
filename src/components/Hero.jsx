@@ -22,7 +22,7 @@ const Hero = () => {
               variants={containerVariants(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+              className="pb-10 text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl"
             >
               Anand K C
             </motion.h1>
@@ -30,7 +30,7 @@ const Hero = () => {
               variants={containerVariants(0.5)}
               initial="hidden"
               animate="visible"
-              className="inline-flex animate-text-gradient bg-gradient-to-r from-pink-500 via-sky-400 to-purple-500 bg-[200%_auto] bg-clip-text text-3xl tracking-tight text-transparent"
+              className="inline-flex animate-text-gradient bg-gradient-to-r from-pink-500 via-sky-400 to-purple-500 bg-[200%_auto] bg-clip-text text-2xl tracking-tight text-transparent"
             >
               Full Stack Developer
             </motion.span>
@@ -38,7 +38,7 @@ const Hero = () => {
               variants={containerVariants(1)}
               initial="hidden"
               animate="visible"
-              className="my-8 w-full py-6 flex lg:justify-start justify-center flex-wrap"
+              className="my-10 w-full flex lg:justify-start justify-center flex-wrap"
             >
               <Link
                 activeClass="active"
@@ -49,7 +49,7 @@ const Hero = () => {
                 duration={500}
               >
                 <button
-                  className="relative inline-flex lg:h-16 h-14 overflow-hidden rounded-full p-[1px] m-2"
+                  className="relative inline-flex h-14 overflow-hidden rounded-full p-[1px] m-2"
                   aria-label="Contact Me"
                 >
                   <span
@@ -59,7 +59,7 @@ const Hero = () => {
                   <span
                     className="inline-flex h-full w-full cursor-pointer hover:opacity-85
                             items-center justify-center rounded-full bg-gray-950 px-8 transition ease 
-                            duration-300 py-1 lg:text-xl text-sm font-medium text-gray-50 backdrop-blur-3xl"
+                            duration-300 py-1 lg:text-md text-sm font-medium text-gray-50 backdrop-blur-3xl"
                   >
                     Contact Me
                   </span>
@@ -67,7 +67,7 @@ const Hero = () => {
               </Link>
               <a download="Resume" href={resume}>
                 <button
-                  className="transition-background inline-flex lg:h-16 h-14 lg:text-xl
+                  className="transition-background inline-flex h-14 lg:text-md
                           items-center justify-center rounded-full border border-gray-800 text-sm
                           bg-gradient-to-r from-gray-100 via-[#c7d2fe] to-[#8678f9] 
                           bg-[length:200%_200%] bg-[0%_0%] px-6 font-medium text-gray-950 
@@ -89,8 +89,8 @@ const Hero = () => {
               className="rounded-lg border border-slate-200"
               src={profilePic}
               alt="Anand KC"
-              width={700}
-              height={600}
+              width={600}
+              height={500}
             />
           </div>
         </div>

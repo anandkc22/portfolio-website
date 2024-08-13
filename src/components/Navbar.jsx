@@ -50,7 +50,7 @@ const Navbar = () => {
           initial={{ y: 0, opacity: 1, scale: 1 }}
           whileHover={{ y: -10, opacity: 0.5, scale: 0.8 }}
           transition={{ duration: 0.8 }}
-          className="mx-2 lg:w-36 w-24 cursor-pointer"
+          className="mx-2 lg:w-28 w-24 cursor-pointer"
           src={logo}
           alt="Logo"
         />
@@ -74,9 +74,9 @@ const Navbar = () => {
             >
               <li
                 onClick={() => toggleActiveClass(item.href)}
-                className="hover:scale-90 transition-transform duration-300 cursor-pointer"
+                className="hover:scale-90 duration-300 cursor-pointer"
               >
-                <p className="pb-1 text-lg">{item.label}</p>
+                <p className="pb-1 text-md">{item.label}</p>
                 {item.href === active && (
                   <div className="h-[3px] animate-border-width rounded-full bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
                 )}
@@ -91,7 +91,7 @@ const Navbar = () => {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="m-8 flex items-center gap-4 lg:text-3xl"
+          className="m-8 flex items-center gap-4 lg:text-2xl"
         >
           <SocialIcon href={LINKS.linkedin} Icon={FaLinkedin} label="LinkedIn" />
           <SocialIcon href={LINKS.github} Icon={FaGithub} label="GitHub" />

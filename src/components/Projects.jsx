@@ -43,7 +43,7 @@ const Projects = () => {
                 variants={fadeInVariants}
                 initial="hidden"
                 whileInView="visible"
-                className="mb-4 text-neutral-400"
+                className="mb-4 text-md text-neutral-400"
               >
                 {project.description}
               </motion.p>
@@ -56,7 +56,7 @@ const Projects = () => {
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="rounded bg-neutral-900 px-3 py-1 text-sm font-medium text-purple-300"
+                    className="rounded bg-neutral-900 px-3 py-1 text-md font-medium text-purple-300"
                   >
                     {tech}
                   </span>

@@ -17,7 +17,7 @@ const fadeInVariants = (direction = 'left', delay = 0) => ({
 const About = () => {
   return (
     <section id="about" className="border-b border-neutral-900 pb-4 lg:pb-14">
-      <h2 className="my-20 text-center text-4xl font-bold">
+      <h2 className="my-14 text-center text-4xl font-bold">
         About
         <span className="text-purple-300"> Me</span>
       </h2>
@@ -31,7 +31,7 @@ const About = () => {
               className="rounded-lg border border-slate-400"
               src={aboutImg}
               alt="A picture of Anand K C"
-              width={600}
+              width={500}
             />
           </div>
         </div>
@@ -41,7 +41,7 @@ const About = () => {
               variants={fadeInVariants('right', 0)}
               initial="hidden"
               whileInView="visible"
-              className="my-2 max-w-xl py-6 text-md lg:text-xl text-gray-400"
+              className="my-2 max-w-xl py-6 text-md text-gray-400"
             >
               {ABOUT_TEXT}
             </motion.p>
